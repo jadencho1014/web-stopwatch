@@ -1,38 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+body {
+  background: #494949;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+  color: #eaeaea;
+}
+
 .App {
+  max-width: 600px;
+  width: 90%;
+  height: 500px;
+  margin: 30px auto;
+}
+
+.clock-holder {
+  width: 100%;
+  background-color: #323232;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.stopwatch {
+  padding: 3rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stopwatch span {
+  background-color: #486c9e;
+  color: #eaeaea;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 4.3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stopwatch .stopwatch-btn {
+  background: #eaeaea;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  width: 8rem;
+  cursor: pointer;
+}
+.stopwatch .stopwatch-btn-red {
+  border: 2px solid #bd0000;
+  color: #bd0000;
+}
+.stopwatch .stopwatch-btn-orange {
+  border: 2px solid #ff9d00;
+  color: #ff9d00;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.stopwatch .stopwatch-btn-green {
+  border: 2px solid #00cf53;
+  color: #00cf53;
 }
-
-.App-link {
-  color: #61dafb;
+.stopwatch .stopwatch-btn-red:hover {
+  background: #bd0000;
+  border: 2px solid #bd0000;
+  color: #eaeaea;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stopwatch .stopwatch-btn-orange:hover {
+  background: #ff9d00;
+  border: 2px solid #ff9d00;
+  color: #eaeaea;
+}
+.stopwatch .stopwatch-btn-green:hover {
+  background: #00cf53;
+  border: 2px solid #00cf53;
+  color: #eaeaea;
 }
